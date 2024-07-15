@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*Change this color to white again*/
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dfdede;
+  
+}
+
+header {
+  background-color: #FF8200;
+  font-size: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li a {
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+.nav ul li a:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.nav ul li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main{
+  display:flex;
+  padding:10px;
+}
+
+aside{
+  display:flex;
+  background-color:#FFFFFF;
+  height:100%;
+  width:20em;
+  border-radius:10px;
+  border:#fffefe;
+  margin-top:15px;
+  padding-left:15px;
+  
+}
+aside h3{
+  padding: 1em;
+  color: #6b6565;
+}
+
+/* Container for create-post and post class*/
+.container {
+  padding:15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*the create-post start here*/
+.create-post, .post {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+  width: 40.5em;
+}
+
+.create-post {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.create-post .profile-pic, .post .profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border:#ccc solid;
+}
+
+.create-post input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  width:40em;
+  position:relative;
+  bottom:20px;
+}
+
+.create-post .post-btn {
+  background-color: #dfa32c;
+  color: white;
+  border:none;
+  border-radius: 20px;
+  padding: 8px 20px;
+  cursor: pointer;
+  height:2.2em;
+  position:relative;
+  left:26em;
+}
+
+.create-post .post-btn:hover{
+  background-color: #ffa600;
+}
+.action-btns{
+  display: flex;
+  gap:20px;
+  margin-left:4em;
+}
+
+.post-username{
+  cursor: pointer;
+}
+.action-btns .post-icons img{
+  width:30px;
+  height:30px;
+}
+
+/* create-post ends here*/
+
+
+/* post styling start here*/
+.post span{
+  position:relative;
+  bottom:20px;
+  font-size:1.2em;
+  color: #854141;
+  font-weight: bold;
+}
+
+/* Change the font famipy for the post content and username*/
+.post .post-content{
+  width:35em;
+  position:relative;
+  left:58px;
+  bottom:16px;
+}
+
+.post .post-icons{
+  position:relative;
+  left:58px;
+  cursor:pointer;
+}
+
+ul{
+  list-style:none;
+}
+
+/* post ends here*/
+
+/*
+
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-username {
+  font-weight: bold;
+  color:#a55130
+}
+
+.post-time {
+  color: gray;
+}
+
+.post-content {
+  margin-top: 10px;
+}
+
+.post-content p{
+  color:#6b6565;
+}
+.post-icons {
+  display: flex;
+  gap:60px;
+  margin-top: 10px;
+  position:relative;
+  left:12em;
+}
+
+.post-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+*/
