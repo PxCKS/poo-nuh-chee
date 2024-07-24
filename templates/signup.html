@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | poo-nuh-chee</title>
+    <link rel="stylesheet" href="/static/css/signup.css">
+    <link rel="icon" href="/static/images/logo.png" type="image/png">
+</head>
+<body>
+<div class="container">
+    <header>
+
+    </header>
+    <main>
+        <h1>Join poo-nuh-chee now, it's free!</h1>
+        <form method="post" action="/signup">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Password (6 or more characters)" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="retype-password" placeholder="Retype Password" required>
+            </div>
+            <button type="submit">Agree & Join</button>
+            <p>Already on LinkedIn? <a href="{{url_for('auth.login')}}">Sign in</a></p>
+        </form>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2024 TrendingEC. Created by devKona_</p>
+</footer>
+</body>
+</html>

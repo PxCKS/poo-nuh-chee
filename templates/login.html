@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign In | poo-nuh-chee</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <link rel="icon" href="/static/images/logo.png" type="image/png">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+
+
+    </header>
+
+    <div class="login">
+        <h3>Sign in</h3>
+        <p>Stay updated on community trending topics.</p>
+        <form method="post">
+            <input id="username" type="text" name="username"placeholder="Username" required>
+
+            <div class="password-container">
+                <input id="password" type="password" name="password" placeholder="Password" required>
+                <a href="{{url_for('auth.forgot_password')}}" name="forgot-password" class="forgot-password">Forgot Password?</a>
+            </div>
+
+            <button type="submit" class="login-button">Sign in</button>
+        </form>
+        <p class="or">or</p>
+        <a href="{{url_for('auth.signup')}}"><button  class="join-now" onclick="window.location.href='{{ url_for('auth.signup') }}'">Join now</button>
+        </a>      </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 TrendingEC. Created by devKona_</p>
+</footer>
+</body>
+</html>
